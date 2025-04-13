@@ -1,0 +1,150 @@
+@media (min-width: 576px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 85%;
+  }
+
+  /*this will be applied for all screens bigger than 768px*/
+  /*no need to rewrite it because it will be applied first
+  before checking if the screen fits in the next media*/
+  /* .header .layer .container .nav {
+    position: fixed;
+    width: inherit;
+  } */
+
+  .header .layer .container .nav .logo {
+    float: left;
+  }
+
+  .header .layer .container .nav .navlist {
+    float: right;
+  }
+
+  .header .layer .container .nav .navlist li {
+    float: left;
+  }
+
+  .our-services .container .sections .section {
+    width: 50%;
+  }
+
+  div.our-portfolio .container .content .sections .section {
+    width: 48%;
+    justify-content: space-between;
+  }
+  /*-------------------------------------------------------*/
+
+  div.client-feedback .container .card {
+    flex-wrap: nowrap;
+    width: 80%;
+    margin: 50px auto;
+  }
+
+  div.our-blog .container .sections {
+    justify-content: space-between;
+  }
+
+  div.our-blog .container .sections .section {
+    width: 32%;
+  }
+
+  div.contact-us .container form {
+    width: 70%;
+  }
+
+  div.contact-us .container form .first-line {
+    flex-direction: row;
+  }
+
+  div.contact-us .container form .first-line input {
+    flex-grow: 1;
+  }
+
+  div.stats .container .content {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 100px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 80%;
+    display: flow-root;
+  }
+
+  div.about-me .container .image,
+  div.about-me .container .text {
+    float: left;
+  }
+
+  div.about-me .container .text ul li {
+    float: left;
+    width: 50%;
+  }
+
+  div.about-me .container .image {
+    width: 25%;
+    border: #555555 7px solid;
+    border-radius: 6px;
+    margin-left: 100px;
+  }
+
+  div.about-me .container .image .overlay {
+    transform: translateX(5%) translateY(5%);
+  }
+
+  div.about-me .container .text {
+    width: 60%;
+    padding-left: 100px;
+  }
+
+  div.our-portfolio .container .content .sections .section {
+    width: 31%;
+    justify-content: space-between;
+  }
+
+  div.client-feedback .container .card {
+    width: 70%;
+  }
+
+  div.contact-us .container form {
+    width: 65%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 75%;
+  }
+  .our-services .container .sections .section {
+    width: 25%;
+  }
+
+  div.client-feedback .container .card {
+    width: 60%;
+  }
+
+  div.contact-us .container form {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    width: 70%;
+  }
+
+  div.client-feedback .container .card {
+    width: 50%;
+  }
+
+  div.contact-us .container form {
+    width: 55%;
+  }
+}

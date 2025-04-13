@@ -1,0 +1,183 @@
+/*typewriter animation for text*/
+@keyframes typewriter {
+  0% {
+    content: " ";
+  }
+  1.53846% {
+    content: " D";
+  }
+  3.07692% {
+    content: " De";
+  }
+  4.61538% {
+    content: " Dev";
+  }
+  6.15384% {
+    content: " Deve";
+  }
+  7.6923% {
+    content: " Devel";
+  }
+  9.23076% {
+    content: " Develo";
+    color: white;
+  }
+  10.76922% {
+    content: " Develop";
+    color: #fa3960;
+  }
+  12.30768% {
+    content: " Develope";
+  }
+  13.84614% {
+    content: " Developer";
+  }
+  20% {
+    content: " Developer";
+  }
+  21.53844% {
+    content: " Develope";
+    color: #fa3960;
+  }
+  23.0769% {
+    content: " Develo";
+    color: white;
+  }
+  24.61536% {
+    content: " Devel";
+  }
+  26.15382% {
+    content: " Deve";
+  }
+  27.69228% {
+    content: " Dev";
+  }
+  29.23074% {
+    content: " De";
+  }
+  30.7692% {
+    content: " D";
+  }
+  32.30766% {
+    content: " D";
+  }
+  33.84612% {
+    content: " D";
+  }
+  35.38458% {
+    content: " De";
+  }
+  36.92304% {
+    content: " Des";
+  }
+  38.4615% {
+    content: " Desi";
+  }
+  39.99996% {
+    content: " Desig";
+    color: white;
+  }
+  41.53842% {
+    content: " Design";
+    color: #fa3960;
+  }
+  43.07688% {
+    content: " Designe";
+  }
+  44.61534% {
+    content: " Designer";
+  }
+  52.30764% {
+    content: " Designer";
+  }
+  53.8461% {
+    content: " Designe";
+  }
+  55.38456% {
+    content: " Design";
+    color: #fa3960;
+  }
+  56.92302% {
+    content: " Desig";
+    color: white;
+  }
+  58.46148% {
+    content: " Desi";
+  }
+  59.99994% {
+    content: " Des";
+  }
+  61.5384% {
+    content: " De";
+  }
+  63.07686% {
+    content: " D";
+  }
+  64.61532% {
+    content: " D";
+  }
+  66.15378% {
+    content: " D";
+  }
+  67.69224% {
+    content: " Dr";
+  }
+  69.2307% {
+    content: " Dre";
+  }
+  70.76916% {
+    content: " Drea";
+    color: white;
+  }
+  72.30762% {
+    content: " Dream";
+    color: #fa3960;
+  }
+  73.84608% {
+    content: " Dreame";
+  }
+  75.3845% {
+    content: " Dreamer";
+  }
+  83.07684% {
+    content: " Dreamer";
+  }
+  84.6153% {
+    content: " Dreame";
+  }
+  86.15376% {
+    content: " Dream";
+    color: #fa3960;
+  }
+  87.69222% {
+    content: " Drea";
+    color: white;
+  }
+  89.23068% {
+    content: " Dre";
+  }
+  90.76914% {
+    content: " Dr";
+  }
+  92.3076% {
+    content: " D";
+  }
+  93.84606% {
+    content: " ";
+  }
+  95.38452% {
+    content: " ";
+  }
+}
+
+@keyframes blinking {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+  100% {
+    border-color: transparent;
+  }
+}

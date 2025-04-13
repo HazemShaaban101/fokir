@@ -1,0 +1,722 @@
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.clear {
+  clear: both;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-image: url(../images/hero\ img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.header .layer {
+  background-color: rgba(0, 0, 0, 0.774);
+  height: inherit;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  height: inherit;
+}
+
+.header .layer .container .nav .logo {
+  color: rgb(255, 48, 91);
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 25px;
+}
+.header .logo p {
+  padding: 25px 0 0 0;
+  margin: 0;
+}
+
+.nav * {
+  display: block;
+}
+
+.navlist ul {
+  padding: 0;
+}
+
+.navlist li {
+  margin: 5px 0;
+  padding: 0px 10px;
+  list-style: none;
+}
+
+.navlist ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.navlist ul li.home a {
+  color: rgb(255, 48, 91);
+}
+
+/*=================================================*/
+
+.header .container .text-animation {
+  font-family: "Source Sans 3", sans-serif;
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+}
+
+.header .container .text-animation .first-line {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 26px;
+  margin: 10px;
+}
+
+.header .container .text-animation .second-line {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 77px;
+  color: #ff305b;
+  margin: 10px;
+}
+
+.header .container .text-animation .third-line {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 26px;
+  padding: 0px;
+  border-right: 3px solid white;
+  animation: blinking 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  display: inline;
+}
+
+.header .container .text-animation .third-line::after {
+  content: " ";
+  position: relative;
+  animation: typewriter 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+/*---------------------------------------------*/
+
+div.about-me {
+  margin-bottom: 50px;
+}
+
+div.about-me .container {
+  text-align: center;
+  padding-top: 50px;
+}
+
+div.about-me .container div {
+  margin: auto;
+}
+
+div.about-me .container .image {
+  width: 80%;
+}
+
+div.about-me .container .image .overlay {
+  overflow: hidden;
+  position: relative;
+}
+
+div.about-me .container .image img {
+  border-radius: 5px;
+}
+
+div.about-me .container .image .layer {
+  background-color: rgba(0, 0, 0, 0.671);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  transition: all 400ms;
+  display: block;
+  border-radius: 5px;
+}
+
+div.about-me .container .image:hover .layer {
+  top: 0;
+  opacity: 1;
+}
+
+div.about-me .container .image .layer .content {
+  height: 100%;
+}
+
+div.about-me .container .image .layer .content .icon {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+}
+
+i {
+  color: white;
+  font-size: 16px;
+  padding: 0 10px;
+  transition: all 300ms;
+}
+
+div.about-me .container .image .layer .content .icon:hover i {
+  color: #ff305b;
+}
+
+div.about-me .container .text {
+  width: 80%;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  color: #555555;
+}
+div.about-me .container .text h2 {
+  border-left: #ff305b solid 5px;
+  font-family: "Source Sans 3", sans-serif;
+  color: #333333;
+  line-height: 25px;
+  font-size: 34px;
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+div.about-me .container .text p {
+  border-bottom: dashed 1px #999999;
+  margin-top: 0;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+
+  line-height: 25px;
+  font-size: 16px;
+  font-weight: 400;
+}
+div.about-me .container .text .info span {
+  font-weight: 500;
+}
+div.about-me .container .text ul {
+  padding: 0;
+  margin: 0;
+}
+
+div.about-me .container .text ul li {
+  list-style: none;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+div.about-me .container .text button {
+  background-color: #ff305b;
+  padding: 8px 10px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 16px;
+  line-height: 25px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+  transition: all 200ms;
+}
+
+div.about-me .container .text button i {
+  margin: 0;
+  padding: 0 0 0 5px;
+}
+
+div.about-me .container .text button:hover {
+  background-color: #ec2403;
+}
+
+/*--------------------------------------------------*/
+.our-services {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.hr-short {
+  width: 100px;
+  margin: auto;
+  border-top: 1px solid #ff305b;
+}
+.hr-long {
+  width: 200px;
+  margin: 3px auto;
+  border-top: 1px solid #ff305b;
+}
+
+div.our-services .container .sections {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+div .container .sections .section i {
+  font-size: 40px;
+  color: #ff305b;
+}
+
+.our-services .container .sections .section {
+  width: 100%;
+  padding: 15px 30px;
+  transition: all 400ms;
+}
+
+.our-services .container .sections .section:hover {
+  background-color: white;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.644);
+}
+.our-services .container h2 {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 30px;
+  color: #333333;
+  margin: 20px;
+}
+.our-services .container .sections .section h3 {
+  font-family: "Source Sans 3", sans-serif;
+  color: white;
+  font-weight: 600;
+  size: 24px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.our-services .container .sections .section p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 25px;
+  color: #555555;
+  size: 16px;
+}
+
+/*---------------------------------------------*/
+
+div.our-portfolio .container .content .sortlinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 30px;
+}
+
+div.our-portfolio .container .content .sections {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+}
+
+div.our-portfolio .container .content .sections .section {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+div.our-portfolio .container .content .sections .section .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.671);
+  opacity: 0;
+
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  transition: all 300ms;
+}
+
+div.our-portfolio .container .content .sections .section:hover .overlay {
+  opacity: 1;
+}
+
+div.our-portfolio .container .content .sections .section .overlay i {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+div.our-portfolio h2 {
+  font-size: 40px;
+  line-height: 30px;
+  font-weight: 800;
+  color: #333;
+  font-family: "Source Sans 3", sans-serif;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+div.our-portfolio h3 {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #333;
+  font-family: Roboto, sans-serif;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/*----------------------------------------------*/
+
+div.stats {
+  background-color: #f1f1f1;
+}
+
+div.stats .container .content {
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 50px;
+  column-gap: 30px;
+}
+
+div.stats .container .content .section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+div.stats .container .content .section i {
+  color: #ff305b;
+  font-size: 26px;
+  line-height: 26px;
+  margin: 0 0 15px 0;
+}
+div.stats .container .content .section .number {
+  color: #333333;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 26px;
+  line-height: 29px;
+  font-weight: 800;
+  margin: 0 0 10px 0;
+}
+
+div.stats .container .content .section .text {
+  color: #555555;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 600;
+  font-family: "Source Sans 3", sans-serif;
+  margin: 0;
+}
+
+/***************************************************/
+
+div.client-feedback .container {
+  text-align: center;
+}
+
+div.client-feedback .container h2 {
+  color: #333;
+  font-size: 40px;
+  line-height: 30px;
+  font-weight: 800;
+  font-family: "Source Sans 3", sans-serif;
+  margin: 50px 0 20px 0;
+}
+
+div.client-feedback .container .card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 40px 0px;
+  width: 100%;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  border-radius: 5px;
+  column-gap: 20px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background: linear-gradient(135deg, #ff305b 19%, #f1f1f1 19%);
+}
+
+div.client-feedback .container .card .image {
+  width: 40%;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+div.client-feedback .container .card p.content {
+  color: #555;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  margin: 0 0 15px 0;
+}
+
+div.client-feedback .container .text h3 {
+  color: #333;
+  font-size: 26px;
+  line-height: 29px;
+  font-weight: 600;
+  font-family: "Source Sans 3", sans-serif;
+  margin: 0 0 10px 0;
+}
+
+div.client-feedback .container .card p.location {
+  color: #777;
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: 600;
+  font-family: "Source Sans 3", sans-serif;
+  margin: 0 0 10px 0;
+}
+
+div.client-feedback .container .card p.location i {
+  color: #777;
+  font-weight: 600;
+  padding: 3px;
+  font-style: normal;
+}
+
+div.client-feedback .container .text .stars i {
+  color: #f1c30d;
+  padding: 0;
+}
+
+/********************************************************/
+
+div.our-blog {
+  background-color: #f1f1f1;
+  padding: 50px 0;
+}
+
+div.our-blog .container h2 {
+  color: #333;
+  font-size: 40px;
+  line-height: 30px;
+  font-weight: 800;
+  font-family: "Source Sans 3", sans-serif;
+  margin: 0 0 20px 0;
+}
+
+div.our-blog .container .sections {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  row-gap: 30px;
+  margin-top: 30px;
+}
+
+div.our-blog .container .sections .section {
+  text-align: left;
+  width: 90%;
+  background-color: white;
+}
+
+div.our-blog .container .sections .section .video {
+  position: relative;
+}
+
+div.our-blog .container .sections .section .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 0 0 10px;
+  margin-top: 20px;
+}
+
+/* 7araka say3a: since i frame is a replaced element, and i dont
+know the height of the frame for each screen, i added an image
+behind the iframe the same size as the two images around the iframe.
+and gave it zero opacity. so the image is not showing, but it keeps
+the iframe size bounded*/
+div.our-blog .container .sections .section .video img {
+  opacity: 0;
+}
+
+div.our-blog .container .sections .section .video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+div.our-blog .container .sections .section .date,
+div.our-blog .container .sections .section .text {
+  color: #555;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  margin: 0 10px 15px 10px;
+}
+
+div.our-blog .container .sections .section h3 {
+  color: #333;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 600;
+  font-family: "Source Sans 3", sans-serif;
+  margin: 0 10px 15px 10px;
+}
+
+div.our-blog .container .sections .section a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  margin: 0 10px 25px 10px;
+}
+
+div.our-blog .container .sections .section a:hover {
+  text-decoration: underline;
+  color: #ff305b;
+}
+/********************************************************************/
+
+div.contact-us .container {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.contact-us .container input {
+  height: 40px;
+  margin-bottom: 30px;
+  border: #b6b6b6 solid 1px;
+  border-radius: 5px;
+}
+div.contact-us .container textarea:focus,
+div.contact-us .container input:focus {
+  outline: #ff305b solid 1px;
+}
+
+div.contact-us .container textarea {
+  height: 200px;
+  border: #b6b6b6 solid 1px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  min-height: 200px;
+  min-width: 200px;
+}
+
+div.contact-us .container h2 {
+  color: #333;
+  font-size: 40px;
+  line-height: 30px;
+  font-weight: 800;
+  font-family: "Source Sans 3", sans-serif;
+  margin: 0 0 20px 0;
+}
+
+div.contact-us .container form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+div.contact-us .container form .first-line {
+  display: flex;
+  flex-direction: column;
+  column-gap: 30px;
+}
+
+div.contact-us .container form div.button {
+  text-align: left;
+}
+
+div.contact-us .container form div.button button {
+  padding: 15px 20px;
+  border-radius: 5px;
+  background-color: #ff305b;
+  border: #ff305b solid 1px;
+  color: white;
+  margin-left: auto;
+}
+
+/**********************************************************/
+div.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #333;
+}
+
+div.footer .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  margin-bottom: 10px;
+}
+
+div.footer .text {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+div.footer .text span {
+  color: #ff305b;
+  text-decoration: underline;
+}
+
+div.footer .links a:hover i {
+  color: #ff305b;
+}
